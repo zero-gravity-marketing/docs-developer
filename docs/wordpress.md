@@ -3,8 +3,8 @@
 ## Themes
 
 ::: warning How to Select
-- 5k - 15k : [Beaver Builder Theme](#beaver-builder)  
-- 15k+ : [Sage 8 Custom Fork](#sage)
+- 5k - 15k : [Beaver Builder Theme](#beaver-builder-theme)  
+- 15k+ : [Sage 8 Custom Fork](#sage-8-custom-fork)
 :::
 
 #### Beaver Builder Theme
@@ -23,6 +23,7 @@
 - [Optimization](#optimization-plugins)  
 - [Migration](#migration-plugins)
 - [Forms](#form-plugins)
+- [Backup & Staging](#backup-and-staging-plugins)
 :::
 
 #### SEO Plugins
@@ -40,6 +41,7 @@
 - [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 - [Cloudways - Breeze](https://wordpress.org/plugins/breeze/)
 - [WP Sweep](https://wordpress.org/plugins/wp-sweep/)
+- WP Smush Pro
 
 #### Migration Plugins
 - [Cloudways Wordpress Migrator](https://wordpress.org/plugins/bv-cloudways-automated-migration/)
@@ -49,6 +51,9 @@
 #### Form Plugins
 - [Gravity Forms](https://www.dropbox.com/s/ujtryea24aifqhf/gravityforms_2.2.3.14.zip?dl=0)
   - Key: b6508a99c44a2cb908e489a14b8e9079
+
+#### Backup and Staging Plugins
+- WP Timecapsule
 
 ## Custom Fields
 Carbon Fields is not a plugin but a library loaded from composer:
