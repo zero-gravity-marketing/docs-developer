@@ -2,7 +2,8 @@ module.exports = {
   title: 'ZGM',
   themeConfig: {
   	nav: [
-  		{	text: 'Another Page', link: '/wordpress.html'	}
+      { text: 'Wordpress', link: '/wordpress.html'  },
+  		{	text: 'Dev Logins', link: 'https://app.asana.com/0/451921135192359/board'	}
   	],
   	sidebar: [
       {
@@ -15,7 +16,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Servers',
+        title: 'Hosting',
         collapsable: false,
         children: [
           '/cloudways',
