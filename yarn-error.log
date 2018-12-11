@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/jonwaldstein/.nvm/versions/node/v8.11.1/bin/node /usr/local/Cellar/yarn/1.9.2/libexec/bin/yarn.js docs:dev
+  /Users/jonwaldstein/.nvm/versions/node/v8.11.1/bin/node /usr/local/Cellar/yarn/1.9.2/libexec/bin/yarn.js
 
 PATH: 
   /Users/jonwaldstein/.nvm/versions/node/v8.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jonwaldstein/.composer/vendor/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/jonwaldstein/Sites/zgmio/package.json: Unexpected string in JSON at position 57
+  SyntaxError: /Users/jonwaldstein/Sites/zgmdocs/package.json: Unexpected token } in JSON at position 153
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.9.2/libexec/lib/cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -26,11 +26,11 @@ npm manifest:
   {
     "devDependencies": {
       "vuepress": "^0.13.1"
-    }
+    },
     "scripts": {
       "docs:dev": "vuepress dev docs",
       "docs:build": "vuepress build docs"
-    }
+    },
   }
 
 yarn manifest: 
@@ -2414,6 +2414,10 @@ Lockfile:
   fastparse@^1.1.1:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.1.tgz#d1e2643b38a94d7583b479060e6c4affc94071f8"
+  
+  fecha@^2.3.3:
+    version "2.3.3"
+    resolved "http://registry.npmjs.org/fecha/-/fecha-2.3.3.tgz#948e74157df1a32fd1b12c3a3c3cdcb6ec9d96cd"
   
   figures@^2.0.0:
     version "2.0.0"
@@ -5809,6 +5813,12 @@ Lockfile:
     version "1.6.0"
     resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
   
+  vue2-datepicker@^2.6.3:
+    version "2.6.3"
+    resolved "https://registry.yarnpkg.com/vue2-datepicker/-/vue2-datepicker-2.6.3.tgz#dcbaaedf9953b1e398af8cdf600ebd6826a8bffa"
+    dependencies:
+      fecha "^2.3.3"
+  
   vue@^2.5.16:
     version "2.5.17"
     resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
@@ -5885,6 +5895,10 @@ Lockfile:
       webpack-serve "^1.0.2"
       webpackbar "^2.6.1"
       workbox-build "^3.1.0"
+  
+  vuetify@^1.3.12:
+    version "1.3.12"
+    resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.3.12.tgz#a605a978e88385ace60301fc50502fe53ae940fb"
   
   watchpack@^1.5.0:
     version "1.6.0"
