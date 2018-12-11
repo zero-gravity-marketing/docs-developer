@@ -19,7 +19,7 @@
 	    },
 	    allInputs: function() {
 	      // find all inputs
-	      let allInputs = document.querySelectorAll('form input');
+	      let allInputs = document.querySelectorAll('#project-timeline input');
 	      let totalInputs = allInputs.length;
 	      return 100 / totalInputs;
 	    }
@@ -34,7 +34,7 @@
 </script>
 <template>
 	<div>
-		<form>
+		<form id="project-timeline">
 			<div class="form-row">
 		    <div class="col-md-6">
 		    	<div class="form-group">
@@ -90,13 +90,13 @@
 		</form>
 
 		<div class="progress" style="margin-bottom: 25px;">
-  		<div class="progress-bar" role="progressbar" :style="{width: progress + '%'}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  		<div class="progress-bar bg-success" role="progressbar" :style="{width: progress + '%'}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 		</div>
 
 				<!-- Button trigger modal -->
 		<transition name="fade">
 			<button v-if="progress === 100"
-			type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectTimeline">
+			type="button" class="btn btn-success" data-toggle="modal" data-target="#projectTimeline">
 			  Copy Project Timeline
 			</button>
 		</transition>

@@ -16,19 +16,18 @@ module.exports = {
         title: 'General',
         collapsable: false,
         children: [
-          '/dev-kick-off',
           '/project-management',
           '/qa'
         ]
       },
-      {
-        title: 'Hosting',
-        collapsable: false,
-        children: [
-          '/cloudways',
-          '/wpengine'
-        ]
-      },
+      // {
+      //   title: 'Hosting',
+      //   collapsable: false,
+      //   children: [
+      //     '/cloudways',
+      //     '/wpengine'
+      //   ]
+      // },
   		{
         title: 'Platforms',
         collapsable: false,
@@ -40,10 +39,10 @@ module.exports = {
         title: 'Coding Standards',
         collapsable: false,
         children: [
-          '/html',
+          // '/html',
           '/css',
-          '/js',
-          '/php',
+          // '/js',
+          // '/php',
         ]
       },
   	]
