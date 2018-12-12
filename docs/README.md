@@ -2,6 +2,9 @@
 title: Docs
 footer: Copyright © 2018-present Zero Gravity Marketing
 ---
+
+To edit the documents, go to https://zgm-docs-developer.netlify.com/admin and give that page a hard refresh until the login screen pops up, then sign in with your github.
+
 > Heres some relevant code
 
 <pre style="color:white">
