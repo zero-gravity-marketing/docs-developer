@@ -13,7 +13,7 @@ module.exports = {
   		{	text: 'Dev Logins', link: 'https://app.asana.com/0/451921135192359/board'	},
       {
         text: 'Admin',
-        link: '/admin/#/',
+        link: '/admin/',
       }
   	],
   	sidebar: [
