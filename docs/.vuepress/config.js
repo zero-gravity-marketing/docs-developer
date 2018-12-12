@@ -4,12 +4,17 @@ module.exports = {
     ['script', { src: `https://code.jquery.com/jquery-3.3.1.slim.min.js` }],
     ['script', { src: `https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js` }],
     ['script', { src: `https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js` }],
+    ['script', { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true }],
   ],
   title: 'ZGM',
   themeConfig: {
   	nav: [
       { text: 'Wordpress', link: '/wordpress.html'  },
-  		{	text: 'Dev Logins', link: 'https://app.asana.com/0/451921135192359/board'	}
+  		{	text: 'Dev Logins', link: 'https://app.asana.com/0/451921135192359/board'	},
+      {
+        text: 'Admin',
+        link: '/admin/#/',
+      }
   	],
   	sidebar: [
       {
