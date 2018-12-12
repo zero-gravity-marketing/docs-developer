@@ -1,3 +1,6 @@
+---
+title: Quality Assurance (Technical QA)
+---
 # Quality Assurance (Technical QA)
 
 ::: warning WTF is Technical Q/A?

@@ -1,3 +1,6 @@
+---
+title: Wordpress
+---
 # Wordpress
 
 ## Themes
