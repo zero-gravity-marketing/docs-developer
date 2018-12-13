@@ -21,6 +21,8 @@
         }
       });
     }
+    let stylePathRegex = /([a-zA-Z0-9\s_\\.\-\(\):])+(.css)$/i;
+    CMS.registerPreviewStyle("/dist/assets/" + stylePathRegex);
   </script>
 </body>
 
