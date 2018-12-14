@@ -3,11 +3,11 @@ title: Docs
 footer: Copyright © 2018-present Zero Gravity Marketing
 ---
 
-To edit the documents, go to https://zgm-docs-developer.netlify.com/admin and give that page a hard refresh until the login screen pops up, then sign in with your github.
+Welcome to the ZGM Developers documentation site.  The goal is to keep our coding consistent.  Nobody likes `spaghetti code` or re-doing their work.  If you follow this guideline you will have a good time.
 
 > Heres some relevant code
 
-<pre style="color:white">
+```php
 function zgm($dev_team = [], $work_quality = 0){
 	if (!empty($dev_team):
 		foreach($dev_team as $team_member):
@@ -18,4 +18,8 @@ function zgm($dev_team = [], $work_quality = 0){
 		endforeach;
 	endif;
 }
-</pre>
+```
+
+::: tip 
+To edit the documents, go to [/admin](/admin/) and give that page a hard refresh until the login screen pops up, then sign in with your github.
+:::

@@ -5,10 +5,9 @@ title: HTML
 
 ## Table Of Contents
 
-1. [General](#general)
-    - [Semantics](#semantics)
-    - [Components](#components)
-2. [SEO](#seo)
+1. [Semantics](#semantics)
+2. [Components](#components)
+3. [SEO](#seo)
 
 ## Semantics
 

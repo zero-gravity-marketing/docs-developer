@@ -4,10 +4,12 @@ title: Quality Assurance (Technical QA)
 # Quality Assurance (Technical QA)
 
 ::: warning WTF is Technical Q/A?
-This checklist is designed for the developer's technical 'QA' process.  We need to make sure the website build is bug-free in modern browsers and devices regardless of budget.
+:::
+
+This checklist is designed for the developer's technical 'QA' process.  We need to make sure the things we build are bug-free in modern browsers and devices regardless of budget.
 
 We should also be aware of ADA requirements for impaired users.
-:::
+
 
 ::: tip Testing Tools & Brief
 - **Browsers:** Test in the latest version of each 

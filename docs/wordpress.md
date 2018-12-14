@@ -71,7 +71,7 @@ Our custom wordpress theme boilerplate. Initially inspired by Roots - Sage 8 to 
 - [Gravity Forms](https://www.dropbox.com/s/ujtryea24aifqhf/gravityforms_2.2.3.14.zip?dl=0)
 
 #### Backup and Staging Plugins
-- WP Timecapsule
+- [WP Timecapsule](https://wordpress.org/plugins/wp-time-capsule/)
 
 #### Custom Plugins
 
