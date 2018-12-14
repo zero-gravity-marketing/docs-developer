@@ -47,7 +47,7 @@ module.exports = {
           // '/html',
           '/css',
           // '/js',
-          // '/php',
+          '/php',
         ]
       },
   	]

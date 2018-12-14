@@ -81,12 +81,14 @@ Typographpy should be consistent across an entire site and codebase.  This means
 ***_type.scss***
 
 ```css
-p, .p1{
+p, 
+.p1{
     font-size: 1rem;
     line-height: 1;
 }
 
-h1,.h1{
+h1,
+.h1{
     font-size: 2rem;
     line-height: 1.5;
 }
