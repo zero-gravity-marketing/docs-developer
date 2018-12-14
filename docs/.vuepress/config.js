@@ -44,7 +44,7 @@ module.exports = {
         title: 'Coding Standards',
         collapsable: false,
         children: [
-          // '/html',
+          '/html',
           '/css',
           // '/js',
           '/php',
