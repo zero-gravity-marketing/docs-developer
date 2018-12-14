@@ -17,8 +17,8 @@ At ZGM we utilize [SCSS](#sass) as our pre-processor of choice whenever possible
 
 1. [General](#general)
     - [Formatting](#formatting)
+    - [Typography](#typography)
     - [Comments](#comments)
-    - [BEM & Utility Classes](#bem)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
@@ -74,6 +74,27 @@ At ZGM we utilize [SCSS](#sass) as our pre-processor of choice whenever possible
   // ...
 }
 ```
+### Typography
+
+Typographpy should be consistent across an entire site and codebase.  This means defining all your types initially in one file like so:
+
+***_type.scss***
+
+```css
+p, .p1{
+    font-size: 1rem;
+    line-height: 1;
+}
+
+h1,.h1{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+```
+
+Also when it comes to defining typography units, we encourage `rem` over `px`.
+***REM***
+When specified on the font-size property of the root element, the rem units refer to the property's initial value. This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px).  This helps with scalability and consistency.
 
 ### Comments
 
@@ -82,20 +103,6 @@ At ZGM we utilize [SCSS](#sass) as our pre-processor of choice whenever possible
 * Write detailed comments for code that isn't self-documenting:
   - Uses of z-index
   - Compatibility or browser-specific hacks
-
-### OOCSS and BEM
-
-We encourage a modular mentality with the use of [BEM](#bem) & [Utility Classes](#utility-classses) for these reasons:
-
-  * It helps create clear, strict relationships between CSS and HTML
-  * It helps us create reusable, modular components
-  * It allows for less nesting and lower specificity
-  * It helps in building scalable stylesheets
-
-**Modular CSS**, is a mentality for splitting up your css files in small files for specific purposes.
-
-**BEM**, or “Block__Element--Modifier”, is a _naming convention_ for classes in HTML and CSS. It helps with consistency, readability, and cleanliness. 
-[Read more about this approach](#bem)
 
 ### ID selectors
 
@@ -194,7 +201,7 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 
 ### Extend directive
 
-`@extend` should be avoided because it has unintuitive and potentially dangerous behavior, especially when used with nested selectors. Even extending top-level placeholder selectors can cause problems if the order of selectors ends up changing later (e.g. if they are in other files and the order the files are loaded shifts). Gzipping should handle most of the savings you would have gained by using `@extend`, and you can DRY up your stylesheets nicely with mixins.
+`@extend` should be used with caution because it has unintuitive and potentially dangerous behavior, especially when used with nested selectors. Even extending top-level placeholder selectors can cause problems if the order of selectors ends up changing later (e.g. if they are in other files and the order the files are loaded shifts). Use cases for this are when you are extending utlity classes that you have created yourself within the codebase.
 
 ### Nested selectors
 
@@ -223,6 +230,14 @@ If you must use an ID selector in the first place (and you should really try not
 
 ## BEM
 
+**BEM**, or “Block__Element--Modifier”, is a _naming convention_ for classes in HTML and CSS. It helps with consistency, readability, and cleanliness.
+
+We encourage a modular mentality with the use of BEM & [Utility Classes](#utility-classses) for these reasons:
+
+  * It helps create clear, strict relationships between CSS and HTML
+  * It helps us create reusable, modular components
+  * It allows for less nesting and lower specificity
+  * It helps in building scalable stylesheets
 
 The naming convention follows this pattern:
 
@@ -239,12 +254,20 @@ The naming convention follows this pattern:
 }
 ```
 
-The reason for double rather than single hyphens and underscores is so that your block itself can be hyphen delimited, for example:
+The reason for double rather than single hyphens and underscores is so that your block itself can be hyphen delimited, although camelcase is encouraged - for example:
  
 ```scss
 .site-search {} /* Block */
+.siteSearch {} /* Block */
+
 .site-search__field {} /* Element */
+.siteSearch__field {} /* Element */
+
 .site-search--full {} /* Modifier */
+.siteSearch--full {} /* Modifier */
+
+.siteSearch__field--full {} /* BEM */
+.siteSearch__fieldLeft--fullBlue {} /* BEM */
 ```
 
 The point of BEM is to tell other developers more about what a piece of markup is doing from its name alone. By reading some HTML with some classes in, you can see how – if at all – the chunks are related; something might just be a component, something might be a child, or element, of that component, and something might be a variation or modifier of that component. To use an analogy/model, think how the following things and elements are related:
