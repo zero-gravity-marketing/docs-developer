@@ -28,6 +28,10 @@
 	  	addProgress: function(){
 	  		//this.progress += 12.5;
 	  		this.progress += this.allInputs;
+	  	},
+	  	parseDate: function(date){
+	  		let thisDate = new Date(date + 'EST');
+	  		return thisDate.toDateString();
 	  	}
 	  }
 	}
@@ -50,6 +54,20 @@
 		    </div>
 		  </div>
 		  <div class="form-row">
+		  	<div class="col-md-6">
+		  		<div class="form-group">
+				    <label>Internal QA Start</label>
+				    <input id="internal_qa_start" class="form-control" type="date" v-model="internal_qa_start" @focus.once="addProgress()">
+				  </div>
+				</div>
+				<div class="col-md-6">
+				  <div class="form-group">
+				    <label>Internal QA End</label>
+				    <input id="internal_qa_end" class="form-control" type="date" v-model="internal_qa_end" @focus.once="addProgress()">
+				  </div>
+		  	</div>
+		  </div>
+		  <div class="form-row">
 				<div class="col-md-12">
 					<div class="form-group">
 		    		<label>Dev Link</label>
@@ -60,19 +78,11 @@
 		  <div class="form-row">
 		  	<div class="col-md-6">
 		  		<div class="form-group">
-				    <label>Internal QA Start</label>
-				    <input id="internal_qa_start" class="form-control" type="date" v-model="internal_qa_start" @focus.once="addProgress()">
-				  </div>
-				  <div class="form-group">
-				    <label>Internal QA End</label>
-				    <input id="internal_qa_end" class="form-control" type="date" v-model="internal_qa_end" @focus.once="addProgress()">
-				  </div>
-		  	</div>
-		  	<div class="col-md-6">
-		  		<div class="form-group">
 				    <label>External QA Start</label>
 				    <input id="external_qa_start" class="form-control" type="date" v-model="external_qa_start" @focus.once="addProgress()">
 				  </div>
+				</div>
+				<div class="col-md-6">
 				  <div class="form-group">
 				    <label>External QA End</label>
 				    <input id="external_qa_end" class="form-control" type="date" v-model="external_qa_end" @focus.once="addProgress()">
@@ -113,12 +123,12 @@
 		      </div>
 		      <div class="modal-body">
 		        <ul>
-							<li><strong>Build Start:&nbsp;</strong>{{build_start}}</li>
-							<li><strong>Build End:&nbsp;</strong>{{build_end}}</li>
-							<li><strong>Dev Link:&nbsp;</strong>{{dev_link}}</li>
-							<li><strong>Internal QA:&nbsp;</strong>{{internal_qa_start}} - {{internal_qa_end}}</li>
-							<li><strong>External QA:&nbsp;</strong>{{external_qa_start}} - {{external_qa_end}}</li>
-							<li><strong>Launch:&nbsp;</strong>{{launch}}</li>
+							<li><strong>Build Start:&nbsp;</strong>{{this.parseDate(build_start)}}</li>
+							<li><strong>Build End:&nbsp;</strong>{{this.parseDate(build_end)}}</li>
+							<li><strong>Dev Link:&nbsp;</strong>{{this.parseDate(dev_link)}}</li>
+							<li><strong>Internal QA:&nbsp;</strong>{{this.parseDate(internal_qa_start)}} - {{this.parseDate(internal_qa_end)}}</li>
+							<li><strong>External QA:&nbsp;</strong>{{this.parseDate(external_qa_start)}} - {{this.parseDate(external_qa_end)}}</li>
+							<li><strong>Launch:&nbsp;</strong>{{this.parseDate(launch)}}</li>
 						</ul>
 		      </div>
 		      <div class="modal-footer">
