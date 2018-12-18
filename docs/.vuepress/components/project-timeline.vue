@@ -125,8 +125,8 @@
 		        <ul>
 							<li><strong>Build Start:&nbsp;</strong>{{this.parseDate(build_start)}}</li>
 							<li><strong>Build End:&nbsp;</strong>{{this.parseDate(build_end)}}</li>
-							<li><strong>Dev Link:&nbsp;</strong>{{this.parseDate(dev_link)}}</li>
 							<li><strong>Internal QA:&nbsp;</strong>{{this.parseDate(internal_qa_start)}} - {{this.parseDate(internal_qa_end)}}</li>
+							<li><strong>Dev Link:&nbsp;</strong>{{this.parseDate(dev_link)}}</li>
 							<li><strong>External QA:&nbsp;</strong>{{this.parseDate(external_qa_start)}} - {{this.parseDate(external_qa_end)}}</li>
 							<li><strong>Launch:&nbsp;</strong>{{this.parseDate(launch)}}</li>
 						</ul>
