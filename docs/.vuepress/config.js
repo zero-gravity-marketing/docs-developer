@@ -5,6 +5,7 @@ module.exports = {
     ['script', { src: `https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js` }],
     ['script', { src: `https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js` }],
     ['script', { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true }],
+    ['meta', { name: 'robots', content: 'noindex, nofollow' }],
   ],
   title: 'ZGM',
   themeConfig: {
