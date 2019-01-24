@@ -98,9 +98,7 @@ We have created boilerplates for writing custom plugins.
 
 **Full Plugin:** For full functionality that needs a modular approach: 
 
-* Themosis: <https://github.com/themosis/plugin>
-
-
+* Coming soon...
 
 ## Custom Fields
 
