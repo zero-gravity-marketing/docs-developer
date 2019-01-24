@@ -34,7 +34,9 @@ HTML5 offers new [semantic elements](https://www.w3schools.com/html/html5_semant
 <summary> - Defines a visible heading for a <details> element
 <time> - Defines a date/time
 ```
+
 This is what it generally look like in action:
+
 ```html
 <header>
     <nav></nav>
@@ -48,12 +50,12 @@ This is what it generally look like in action:
 <footer>
     <nav></nav>
 </footer>
-
 ```
 
----
+- - -
 
 ## Components
+
 Using the `semantic` mentality and our love for object-orientation - we need to think about html in components.  Once you divide your html into components you are making a step to modularity that keeps things clean and readable.  Instead of just plopping a carousel onto a page, think of that carousel as a component that you can move around your codebase like:  
 
 ```html
@@ -66,10 +68,22 @@ Using the `semantic` mentality and our love for object-orientation - we need to 
 </section>
 ```
 
----
+- - -
 
 ## SEO
 
 ZGM's core business is SEO.  We need to make sure the html we write complies with proper [guidelines](https://moz.com/beginners-guide-to-seo/basics-of-search-engine-friendly-design-and-development).
 
-
+* Custom Fields For Extra Tracking Codes - for extra code that can be added just before </head> tag and just before </body> tag
+* H1 tag - only 1 per page, and needs to contain text (no images)
+* Meta Title - 70 characters or less
+* Meta Description - 155 characters or less
+* Image Alt Tags - should be pulled from Media Library
+* Image Title Tags - can be the same as image alt tags
+* Schema Markup - items like company name, address, logo, hours of operation, etc... need to have proper Schema markup
+* Open Graph - all Pages and Posts need Open Graph markup so that sharing on social media pulls in proper data
+* Speed - common items that need consideration:
+  * Image Compression - images need to be compressed and sized properly
+  * GZip should be enabled
+  * Minification of CSS, JS, HTML - where possible
+  * Minimize redirects
