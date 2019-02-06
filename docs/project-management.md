@@ -7,11 +7,10 @@ At ZGM, our developers need to understand how to properly estimate and manage th
 
 ## Calculator
 
-::: tip
+::: tip  This calculation assumes 1 developer is working on the project.
 
 * **Estimated Weeks** = Hourly Budget / 5 hrs (daily) / 5 days (work week) 
 * **To be Safe** = Estimated Weeks + Q/A (25%) + Shit Happens (10%)
-* **\*Note: **This calculation assumes 1 developer is working on the project.
   :::
   <project-calculation/>
 
