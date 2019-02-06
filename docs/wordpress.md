@@ -69,6 +69,7 @@ Our custom wordpress theme boilerplate. Initially inspired by Roots - Sage 8 to 
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 * [Cloudways - Breeze](https://wordpress.org/plugins/breeze/)
 * [WP Sweep](https://wordpress.org/plugins/wp-sweep/)
+* [Query Monitor](https://wordpress.org/plugins/query-monitor/)
 * WP Smush Pro
 
 #### Migration Plugins
